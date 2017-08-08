@@ -1,0 +1,1358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		024A9E49490E142AD2E1D73474D83B64 /* util_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = D8E50C7CAED8053602995350467FF324 /* util_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		07D1F6CBB658015674A05744F802B9B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		085B3A637BE3452ABA70C96DE5D41E84 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35158B0079A0777267387B127A252343 /* Foundation.swift */; };
+		0893378B241058FCA2CB6B5BE3CC5841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0D03AAA55BDD599DBF2364F24553F90B /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9241DA5F04FD2C19B8DAAC923DB98D4C /* AggregateFunctions.swift */; };
+		0D0A4571B253521555BC09945FC91151 /* MQTTKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 83797764C3C2A9B3876A22EECA852073 /* MQTTKit.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0FDE89303AAF6414BA933197B7452EFB /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E179B69C780F6DFEC0F30F2CD4F2201 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1093E181C58A6164FC751D87D5349BF0 /* memory_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CE73C9D1123892E221F28BCC6872190 /* memory_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		12C62CB1E32FB8B923DB20C87A39EA7F /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C58017CF3BD92576B463202A4E14DA /* SwiftyJSON-dummy.m */; };
+		1370138D43215FFB4746C67A0F880601 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		14ED1A26A4F81A8AB068978A557F5DEC /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = BCA7595418767CA89C54BBCF49D77A84 /* will_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		15A3CE1611B44031A23C442282E9D04B /* will_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 96302218C94854FA85BB261411A3D8BF /* will_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1641B02340463122EE220BCE3C4C6864 /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A165BD7AF032250D917F954F22AA954 /* send_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		16C580851E5DF3A0E3B2BBA4DD4DDEDA /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D53D070FEB11E1810F7B8ADD22F8D317 /* DateTools-dummy.m */; };
+		1A09398E4BCDE394E5D373658BABCB33 /* net_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 9352D305CFB74656BAD1AFAA0BDA48C4 /* net_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		20B09288732ABE31A391B32BBD49EBDB /* time_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F262DD81DFD7A67E64CB5338948F88 /* time_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		215BE9932C84D1243969D8340A335D61 /* mosquitto.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E428551A420CCAD8A5209C94248F5D /* mosquitto.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2561EBE2ECF953FB1AF571E94198BFCB /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F3B9E14666D4B8B264521E335360A32B /* DateTools.bundle */; };
+		25A91C3B22276FB428E5857D8D32705A /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB237B77BA0B4B7D0773474E9B92F013 /* Statement.swift */; };
+		25F73A09470FABAF7255FDCD6371248B /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A99C7D76D61CD1334A18FA96FD7F629 /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26E4A92F6B134506DCEB8890D96D1DDF /* read_handle_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = EFFF334370B27EEAF4B266E596AB1987 /* read_handle_shared.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		26F0F81C2448623F053357F3298CA39A /* tls_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = C4689774A1BC1E2BD6B39AE5F83A7674 /* tls_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		28AE5352289F24EA7580AF41101B0072 /* mosquitto.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BD60AC438601A1901BC437175BE3C9E /* mosquitto.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2A9A108B2F3A6664F26E1A3FD8D7D7FB /* tls_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 772E5CEBDDEC6D9542B23F4A1071D50D /* tls_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		300E4E340B01A5D9941D0D6A352746FF /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = B46901C1E2D7F0F442330F6A90B129F9 /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33301E5D14E2FE2A4F3B68336AD76CF7 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D165A032BCFFE1CF237E6906A5DAF71 /* CustomFunctions.swift */; };
+		3A53709FA57B57914693515293D7FF89 /* memory_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D6FEECDE9DE28B328F68AA44BCCC94F /* memory_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3C3B0568B146B871114D73F2ED19C0E6 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A9BE57AFEFEE48250CB3E188FA5297 /* FTS4.swift */; };
+		4448EF1D678A7F7C19F4CE88C1900645 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F2749138085808941367319ADEA022 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C7E56E3EC345E87768186FF19BBDE78 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345C612BE19EF2B5F17960A01C3D6098 /* Schema.swift */; };
+		4F2EDA2EFE7BE48520BE02BD5003D8E3 /* mqtt3_protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F675191FFBB2A29E0379B4685FB13D5 /* mqtt3_protocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		51DB6D880D327A5D43E4FABB61968533 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E3257DE322728129AD7D10F69358B /* Helpers.swift */; };
+		542242F8F29BA21C07E790A68CC6AAE4 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D01DBC0779D4FDCE4E2D4013C82267 /* DTTimePeriodChain.m */; };
+		59E98DCEC07113B242D8F7BA3A85BED9 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF5144AFFD9F309DA1CD8639E5CD36A /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C4557244F554F63AAA18411F4F74A34 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3F01DAE56B5514D9E8BDC8F748355 /* Query.swift */; };
+		5D7A736991748C864C39105B751F94D5 /* send_client_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B439CF40E02064BFE07A8FFA11C9585 /* send_client_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		623DE8991B5C381C1A4091AE33A73BAF /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E66D2153A98FB73772C16A211021F723 /* NSDate+DateTools.m */; };
+		640A87F5852A3DAE29409231D8C45AF2 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A317338703EC74DF3828CAF69DA2 /* DTConstants.m */; };
+		66942DC8BAA6CBB154021E63D69C2E60 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCBC2A1383537DCC1970AECA48F43AC /* config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		695F686D906E07D1A156607BC881B64A /* logging_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B9832FAA2C86426F9D423ACE3446151 /* logging_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6B251FBA0636A6D3A95AEECEA7C91CA6 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB556596B2AFE74A72A55A432951DF /* Blob.swift */; };
+		6BE31EBCE9C4F3CA50D5A384DE33AD5F /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF25F68A9E5B3FD90EF81BFD0B22C3 /* DTTimePeriodCollection.m */; };
+		6BF51767A2ADD98A2410F39742E1FB23 /* MQTTKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6687A729BEE5E28BF1E1B741AC2911C3 /* MQTTKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D877C9CB3040D849A19E5C40ACE87AB /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 95974C454B337991475CEA08726EE104 /* DTError.m */; };
+		71BAB335801D4B59B7ABA0DFBA9386EB /* read_handle.h in Headers */ = {isa = PBXBuildFile; fileRef = EC6C8D1147FE3FE98B928A23F2951AE9 /* read_handle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		753B82B1D15E8CE4FD62E8352EFA50C8 /* time_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = EE4BF30A8DB5B87388F32D3EE6A2C94F /* time_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		78AC49FCD52E0054FB02F6C11F4BC5F3 /* Pods-OznerLbFrameWork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A3B1CFCA5A22A775874CA9A9A97742C /* Pods-OznerLbFrameWork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		870D961E64A4B99A6D15B81ECDA07261 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D43D28260D31582B53169184E22AB5 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		87483B2C1370423479B1BB7BB92B605C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		90ABA7E462664271DA4E97AC7F88CF9F /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DD4E76AFC66A0AF305144F823F5A8B2 /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9489F94F4E4E46F16773FA58761E56AF /* dummypthread.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A6AB50398124EF1C28D1129E28CF4DA /* dummypthread.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		95FE4ED120E19A5A1C36040C10F253FE /* logging_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 5438CB0674A7C15E1311688E0CE50136 /* logging_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9B8B515C491C20BD826A0BB3315FFB29 /* read_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C82FCAF87094437B95E7DF64E56DE2A /* read_handle.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9C7BD8AC4338BAF653D6987F1D79C131 /* DateTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C350BDA865E01B92BA50B797B89BD950 /* DateTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CF3E3ED3B99068A6E72215F44AFE155 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A22C8FE1F2FCA1C22502B9DA0EF44FE /* Connection.swift */; };
+		9FA8489A4ECB45E845463C2614541EA9 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBDF83C06EBB0C78722E6B104D77318 /* RTree.swift */; };
+		9FE8659092D80EE7F6A73B0119FC0906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A6C54789BD84055FC2AC1C67F816C0E7 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD34D9ECCC34C33C8101E3C151F1695 /* Value.swift */; };
+		AC54A430AD1F5495AD90A978D3A478F4 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F457C521C7751181502F76A43417CCC /* DTTimePeriodGroup.m */; };
+		AD04840EDD5A1160CF52F154A2604CEB /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 48876A5E9E84FB4E78BE37C785DB7DB0 /* DTTimePeriod.m */; };
+		ADA09577E0FF03BBBB39ECAE268019CD /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = A2121999040BAF06FD10251671432251 /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B700950795ACA737991FE367B181FE08 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56549FACF26CFE3FC03F1F8EDDC359F /* SwiftyJSON.swift */; };
+		BC8557DB4C8A5B47DEE65C7059721E27 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA863E0F9DB0FEA75C53E33B44928E /* Setter.swift */; };
+		C1A645DAD90A75E43A8D06205322A256 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24ECA76971A03B050690EBD724DC28 /* CoreFunctions.swift */; };
+		C1BAC852F6928ED49288420D79A1CA5D /* messages_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 673C2432B760885764C570C182C262E5 /* messages_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C23DFA9F16CB2810A77FF4DDB33976EC /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C982D3283F9514BDC4081CAA61A6A4 /* Operators.swift */; };
+		C51C0EE8245186A0D2798A117337E4D3 /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4FBD0671C872DC49540F0A94F2D518 /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C685A3FE8A99CB78202FF0FA77FAF960 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFA83AF3074850010C664750B45252 /* Collation.swift */; };
+		C7E944BEE5F86117DB779FB6C8A0584B /* send_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C98BF942FB88EE6E2645F792EB6F8EE /* send_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D0AEFEC7C2B81BDCAC127C39F4147896 /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EA0355528FFC33ED8EBFBDB667B370 /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D343F6F13477599799EBA39792C36258 /* MQTTKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28035B282572D9D5580C66356BDA2A53 /* MQTTKit-dummy.m */; };
+		D55362CCEE6C590F9F110E3A95DD2F2E /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA27AEF8253514FACCDEB476721CB07 /* SQLite.swift-dummy.m */; };
+		D76B8EEFC24F11E920CA5F6BE58787CA /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F819D4F5A043851AAA1CE0E7EBC11963 /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7C0607B810D10A52F5380976F27D993 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E2C6B90714D5E0F79DD43CBF135B70 /* Expression.swift */; };
+		DA808CCEB892034F5CD989409224EF42 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C042979EF01EC2FB49372B2D1917E9 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E82DA320761F74A6B24C9B10F3D2F0B0 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D28D42EBF8AF10BC323442F913BB93 /* FTS5.swift */; };
+		E8EBCF465BEB9E7360298FD27CAD554A /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB6BC9FF644AEBC83034DCE434AEF36 /* SQLite-Bridging.m */; };
+		EEDE2E87970DDC6D2A194D76C932AE92 /* net_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = E935BC7F18E30FF52D18630938809F03 /* net_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EF0554182309AF43BD00F5B4BC932F61 /* Pods-OznerLbFrameWork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF5A578631E2C5A4E86B689FCC8132 /* Pods-OznerLbFrameWork-dummy.m */; };
+		F33CB7BDD10E4BEE5484E9818855C4D5 /* thread_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BBD81BAC98150B072EFE63D6D1D891D /* thread_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F6AD30D97AD924208DE6A23DACEFCAD6 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2447BC9AAD9696959AA24E83B6D95CC8 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8BFDA2C8BACADC66DF82EEF314305C8 /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 6271127CD20355574B0B239B4DF56C39 /* util_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FA2A874E785B2BD3D892172594FE4AE9 /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 176447B71690DE9E34372813980C8A79 /* read_handle_client.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FC92A2BB2B807125FE3D641870529E10 /* mosquitto_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D11239CEC5735B6A4D19D50892546A7 /* mosquitto_internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FCDB17F6A3FE1AB226515AA921BB1DD8 /* MQTTKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E53ECACF75A76E87285635D8E1ECBB /* MQTTKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFF6D3597AC38AE7E8C29899E4B34F39 /* messages_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 0141BF3A434A66FAB71083438F87F585 /* messages_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14DB62318F73E65F74E74FAD7FB29B23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6F7D6DAEBC506FC733D10A40A9B9209;
+			remoteInfo = SQLite.swift;
+		};
+		9213ADE5D735F05C5664549660E44D3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8149CB8569C6CFCEF5541EEA9A4E8C11;
+			remoteInfo = MQTTKit;
+		};
+		A83B7B15B1AD432F8615D31AE585CCCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 019B8DD7F9406148F9C695DB96EBC4A3;
+			remoteInfo = DateTools;
+		};
+		D54BBE573390E1B94BC76C42DED4D839 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B605D668AC9FF9C33689D0664F9E033F;
+			remoteInfo = SwiftyJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0141BF3A434A66FAB71083438F87F585 /* messages_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = messages_mosq.h; path = libmosquitto/messages_mosq.h; sourceTree = "<group>"; };
+		01C042979EF01EC2FB49372B2D1917E9 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodGroup.h; path = DateTools/DateTools/DTTimePeriodGroup.h; sourceTree = "<group>"; };
+		05A9BE57AFEFEE48250CB3E188FA5297 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		0BAF5A578631E2C5A4E86B689FCC8132 /* Pods-OznerLbFrameWork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OznerLbFrameWork-dummy.m"; sourceTree = "<group>"; };
+		12720ECFECBB7CA3F86D913C054B4C57 /* Pods-OznerLbFrameWork-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OznerLbFrameWork-acknowledgements.markdown"; sourceTree = "<group>"; };
+		14EDE3816D75E183EECD831C32438F19 /* MQTTKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MQTTKit.modulemap; sourceTree = "<group>"; };
+		15800F593F9639188E40ED1600EC4B08 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		176447B71690DE9E34372813980C8A79 /* read_handle_client.c */ = {isa = PBXFileReference; includeInIndex = 1; name = read_handle_client.c; path = libmosquitto/read_handle_client.c; sourceTree = "<group>"; };
+		18BF25F68A9E5B3FD90EF81BFD0B22C3 /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
+		1A22C8FE1F2FCA1C22502B9DA0EF44FE /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
+		1B439CF40E02064BFE07A8FFA11C9585 /* send_client_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = send_client_mosq.c; path = libmosquitto/send_client_mosq.c; sourceTree = "<group>"; };
+		1BBD81BAC98150B072EFE63D6D1D891D /* thread_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = thread_mosq.c; path = libmosquitto/thread_mosq.c; sourceTree = "<group>"; };
+		2447BC9AAD9696959AA24E83B6D95CC8 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
+		24AB92092C6742D6517DC82CF6C08846 /* MQTTKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MQTTKit.xcconfig; sourceTree = "<group>"; };
+		24FFA83AF3074850010C664750B45252 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		2659851B9D70BADF1590FD682EC43D98 /* Pods-OznerLbFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OznerLbFrameWork.release.xcconfig"; sourceTree = "<group>"; };
+		28035B282572D9D5580C66356BDA2A53 /* MQTTKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MQTTKit-dummy.m"; sourceTree = "<group>"; };
+		2816831B9E1001FC63E9BF1C85E825C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A3B1CFCA5A22A775874CA9A9A97742C /* Pods-OznerLbFrameWork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OznerLbFrameWork-umbrella.h"; sourceTree = "<group>"; };
+		2B9832FAA2C86426F9D423ACE3446151 /* logging_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = logging_mosq.c; path = libmosquitto/logging_mosq.c; sourceTree = "<group>"; };
+		2BD60AC438601A1901BC437175BE3C9E /* mosquitto.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mosquitto.c; path = libmosquitto/mosquitto.c; sourceTree = "<group>"; };
+		2D6D21CEB915DCCAD8B202EC7FF9B2E2 /* MQTTKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MQTTKit.framework; path = MQTTKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DBDF83C06EBB0C78722E6B104D77318 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		2F675191FFBB2A29E0379B4685FB13D5 /* mqtt3_protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mqtt3_protocol.h; path = libmosquitto/mqtt3_protocol.h; sourceTree = "<group>"; };
+		30E53ECACF75A76E87285635D8E1ECBB /* MQTTKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MQTTKit-umbrella.h"; sourceTree = "<group>"; };
+		33C58017CF3BD92576B463202A4E14DA /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		345C612BE19EF2B5F17960A01C3D6098 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		35158B0079A0777267387B127A252343 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
+		3A558C77F9F6B4608628C671B2A21B8E /* Pods-OznerLbFrameWork-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OznerLbFrameWork-resources.sh"; sourceTree = "<group>"; };
+		3A6AB50398124EF1C28D1129E28CF4DA /* dummypthread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dummypthread.h; path = libmosquitto/dummypthread.h; sourceTree = "<group>"; };
+		3AB763AFCB3B91EBFA1C736D84AA6870 /* DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-prefix.pch"; sourceTree = "<group>"; };
+		3AC2269C57536ED05585290506237503 /* MQTTKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MQTTKit-prefix.pch"; sourceTree = "<group>"; };
+		3B4FBD0671C872DC49540F0A94F2D518 /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DateTools/DTError.h; sourceTree = "<group>"; };
+		3BE3F01DAE56B5514D9E8BDC8F748355 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
+		3CCBC2A1383537DCC1970AECA48F43AC /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = libmosquitto/config.h; sourceTree = "<group>"; };
+		3D165A032BCFFE1CF237E6906A5DAF71 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
+		3D69CA1F842AD29715A662D4720C0346 /* DateTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DateTools.framework; path = DateTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E428551A420CCAD8A5209C94248F5D /* mosquitto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mosquitto.h; path = libmosquitto/mosquitto.h; sourceTree = "<group>"; };
+		48876A5E9E84FB4E78BE37C785DB7DB0 /* DTTimePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriod.m; path = DateTools/DateTools/DTTimePeriod.m; sourceTree = "<group>"; };
+		4A99C7D76D61CD1334A18FA96FD7F629 /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
+		4CE73C9D1123892E221F28BCC6872190 /* memory_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = memory_mosq.c; path = libmosquitto/memory_mosq.c; sourceTree = "<group>"; };
+		4DA3AE9B3BA6D45987FCFD18CEC79911 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F457C521C7751181502F76A43417CCC /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
+		51D43D28260D31582B53169184E22AB5 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
+		529E3257DE322728129AD7D10F69358B /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
+		53EA863E0F9DB0FEA75C53E33B44928E /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		5438CB0674A7C15E1311688E0CE50136 /* logging_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logging_mosq.h; path = libmosquitto/logging_mosq.h; sourceTree = "<group>"; };
+		553F77CB907838E5B0A2343DAAFFEF35 /* DateTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTools.xcconfig; sourceTree = "<group>"; };
+		59D28D42EBF8AF10BC323442F913BB93 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
+		5C82FCAF87094437B95E7DF64E56DE2A /* read_handle.c */ = {isa = PBXFileReference; includeInIndex = 1; name = read_handle.c; path = libmosquitto/read_handle.c; sourceTree = "<group>"; };
+		5D6FEECDE9DE28B328F68AA44BCCC94F /* memory_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = memory_mosq.h; path = libmosquitto/memory_mosq.h; sourceTree = "<group>"; };
+		60BA81467336C00EC066A191260EA27A /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6271127CD20355574B0B239B4DF56C39 /* util_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = util_mosq.c; path = libmosquitto/util_mosq.c; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6687A729BEE5E28BF1E1B741AC2911C3 /* MQTTKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTKit.h; path = MQTTKit/MQTTKit.h; sourceTree = "<group>"; };
+		66F262DD81DFD7A67E64CB5338948F88 /* time_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = time_mosq.h; path = libmosquitto/time_mosq.h; sourceTree = "<group>"; };
+		673C2432B760885764C570C182C262E5 /* messages_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = messages_mosq.c; path = libmosquitto/messages_mosq.c; sourceTree = "<group>"; };
+		6D11239CEC5735B6A4D19D50892546A7 /* mosquitto_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mosquitto_internal.h; path = libmosquitto/mosquitto_internal.h; sourceTree = "<group>"; };
+		6E179B69C780F6DFEC0F30F2CD4F2201 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		772E5CEBDDEC6D9542B23F4A1071D50D /* tls_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls_mosq.h; path = libmosquitto/tls_mosq.h; sourceTree = "<group>"; };
+		7A435C8D73BF3E8CC079C6F4E1690904 /* Pods_OznerLbFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OznerLbFrameWork.framework; path = "Pods-OznerLbFrameWork.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD4E76AFC66A0AF305144F823F5A8B2 /* DTTimePeriodChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodChain.h; path = DateTools/DateTools/DTTimePeriodChain.h; sourceTree = "<group>"; };
+		7E66BDA7361514A1F168B3BAC9E3E0B0 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		83797764C3C2A9B3876A22EECA852073 /* MQTTKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTKit.m; path = MQTTKit/MQTTKit.m; sourceTree = "<group>"; };
+		84EA0355528FFC33ED8EBFBDB667B370 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
+		8506D8985A61AC294DF0D61CB13117FD /* Pods-OznerLbFrameWork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OznerLbFrameWork.modulemap"; sourceTree = "<group>"; };
+		8AF5144AFFD9F309DA1CD8639E5CD36A /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
+		8C98BF942FB88EE6E2645F792EB6F8EE /* send_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = send_mosq.h; path = libmosquitto/send_mosq.h; sourceTree = "<group>"; };
+		9107BA54D5B9A27355983CB8A3C0C44C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9241DA5F04FD2C19B8DAAC923DB98D4C /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		9352D305CFB74656BAD1AFAA0BDA48C4 /* net_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = net_mosq.c; path = libmosquitto/net_mosq.c; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95974C454B337991475CEA08726EE104 /* DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTError.m; path = DateTools/DateTools/DTError.m; sourceTree = "<group>"; };
+		96302218C94854FA85BB261411A3D8BF /* will_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = will_mosq.h; path = libmosquitto/will_mosq.h; sourceTree = "<group>"; };
+		96E2C6B90714D5E0F79DD43CBF135B70 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		9A165BD7AF032250D917F954F22AA954 /* send_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = send_mosq.c; path = libmosquitto/send_mosq.c; sourceTree = "<group>"; };
+		9FD34D9ECCC34C33C8101E3C151F1695 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
+		A2121999040BAF06FD10251671432251 /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
+		AB237B77BA0B4B7D0773474E9B92F013 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
+		ABC0B282D38B797BCA0489A7BBBB02A2 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		ACC1AAC74928D9F68A5F3D5969C24E35 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46901C1E2D7F0F442330F6A90B129F9 /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DateTools/DTConstants.h; sourceTree = "<group>"; };
+		B6F2A317338703EC74DF3828CAF69DA2 /* DTConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTConstants.m; path = DateTools/DateTools/DTConstants.m; sourceTree = "<group>"; };
+		BCA7595418767CA89C54BBCF49D77A84 /* will_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = will_mosq.c; path = libmosquitto/will_mosq.c; sourceTree = "<group>"; };
+		BD4ED6C282794369595A84C7FDCF7A1D /* Pods-OznerLbFrameWork-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OznerLbFrameWork-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD77405288F32FF6E6FCE403FF1E5541 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		C350BDA865E01B92BA50B797B89BD950 /* DateTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-umbrella.h"; sourceTree = "<group>"; };
+		C4689774A1BC1E2BD6B39AE5F83A7674 /* tls_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tls_mosq.c; path = libmosquitto/tls_mosq.c; sourceTree = "<group>"; };
+		C46C5059653565C31C313F1A60D3CD52 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		C56549FACF26CFE3FC03F1F8EDDC359F /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		CFB6BC9FF644AEBC83034DCE434AEF36 /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
+		D1D01DBC0779D4FDCE4E2D4013C82267 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
+		D43D8393258EC5B0C92A3FEB8DF1C821 /* Pods-OznerLbFrameWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OznerLbFrameWork.debug.xcconfig"; sourceTree = "<group>"; };
+		D53D070FEB11E1810F7B8ADD22F8D317 /* DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTools-dummy.m"; sourceTree = "<group>"; };
+		D6F2749138085808941367319ADEA022 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		D8E50C7CAED8053602995350467FF324 /* util_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = util_mosq.h; path = libmosquitto/util_mosq.h; sourceTree = "<group>"; };
+		DAC7B6F51291AD9747C2F533466696FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC24ECA76971A03B050690EBD724DC28 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		E015DE50040D4A6FBAEE5CA34CAD953F /* DateTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DateTools.modulemap; sourceTree = "<group>"; };
+		E0C982D3283F9514BDC4081CAA61A6A4 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		E14AFA68D353BB9AB38D5DFB16C3648E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5CB556596B2AFE74A72A55A432951DF /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		E66D2153A98FB73772C16A211021F723 /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
+		E935BC7F18E30FF52D18630938809F03 /* net_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = net_mosq.h; path = libmosquitto/net_mosq.h; sourceTree = "<group>"; };
+		EBA27AEF8253514FACCDEB476721CB07 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		EC6C8D1147FE3FE98B928A23F2951AE9 /* read_handle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = read_handle.h; path = libmosquitto/read_handle.h; sourceTree = "<group>"; };
+		EE4BF30A8DB5B87388F32D3EE6A2C94F /* time_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = time_mosq.c; path = libmosquitto/time_mosq.c; sourceTree = "<group>"; };
+		EFFF334370B27EEAF4B266E596AB1987 /* read_handle_shared.c */ = {isa = PBXFileReference; includeInIndex = 1; name = read_handle_shared.c; path = libmosquitto/read_handle_shared.c; sourceTree = "<group>"; };
+		F3B9E14666D4B8B264521E335360A32B /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools/DateTools.bundle; sourceTree = "<group>"; };
+		F5F6ACE2D564005E84DA642197A28AB3 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		F819D4F5A043851AAA1CE0E7EBC11963 /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools/DateTools.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		829FD5292471E3DC97F24FDD03537B6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE8659092D80EE7F6A73B0119FC0906 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		995B96109514317F67C00DEF9A92F65A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0893378B241058FCA2CB6B5BE3CC5841 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47883F837EDBC7CAE3EB940C572C143 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D1F6CBB658015674A05744F802B9B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDBBC7D384EABA3C262775D09D2C96F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87483B2C1370423479B1BB7BB92B605C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE0B0F0311E495A28A4B8A3ABE24B3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1370138D43215FFB4746C67A0F880601 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E46F1F579FF7422932C5B08F9228604 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C55E8457E2259CF52B2877C3A24DB7D2 /* Pods-OznerLbFrameWork */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		428CB1DB1733E35E0B081AB7B581A2EC /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				C56549FACF26CFE3FC03F1F8EDDC359F /* SwiftyJSON.swift */,
+				C5EB5285E4F2EDA1A08880AB5D9A9AE4 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		46E87C92D99DC91EF171AD03933469F4 /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				9241DA5F04FD2C19B8DAAC923DB98D4C /* AggregateFunctions.swift */,
+				E5CB556596B2AFE74A72A55A432951DF /* Blob.swift */,
+				24FFA83AF3074850010C664750B45252 /* Collation.swift */,
+				1A22C8FE1F2FCA1C22502B9DA0EF44FE /* Connection.swift */,
+				DC24ECA76971A03B050690EBD724DC28 /* CoreFunctions.swift */,
+				3D165A032BCFFE1CF237E6906A5DAF71 /* CustomFunctions.swift */,
+				96E2C6B90714D5E0F79DD43CBF135B70 /* Expression.swift */,
+				35158B0079A0777267387B127A252343 /* Foundation.swift */,
+				51D43D28260D31582B53169184E22AB5 /* fts3_tokenizer.h */,
+				05A9BE57AFEFEE48250CB3E188FA5297 /* FTS4.swift */,
+				59D28D42EBF8AF10BC323442F913BB93 /* FTS5.swift */,
+				529E3257DE322728129AD7D10F69358B /* Helpers.swift */,
+				E0C982D3283F9514BDC4081CAA61A6A4 /* Operators.swift */,
+				3BE3F01DAE56B5514D9E8BDC8F748355 /* Query.swift */,
+				2DBDF83C06EBB0C78722E6B104D77318 /* RTree.swift */,
+				345C612BE19EF2B5F17960A01C3D6098 /* Schema.swift */,
+				53EA863E0F9DB0FEA75C53E33B44928E /* Setter.swift */,
+				6E179B69C780F6DFEC0F30F2CD4F2201 /* SQLite.h */,
+				8AF5144AFFD9F309DA1CD8639E5CD36A /* SQLite-Bridging.h */,
+				CFB6BC9FF644AEBC83034DCE434AEF36 /* SQLite-Bridging.m */,
+				AB237B77BA0B4B7D0773474E9B92F013 /* Statement.swift */,
+				9FD34D9ECCC34C33C8101E3C151F1695 /* Value.swift */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		52140EA402B20752977C9EB4A7CB650B /* SQLite.swift */ = {
+			isa = PBXGroup;
+			children = (
+				46E87C92D99DC91EF171AD03933469F4 /* standard */,
+				C4F3D919FCFB0EA7638DC3F659CD23A1 /* Support Files */,
+			);
+			name = SQLite.swift;
+			path = SQLite.swift;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C93577701A6E83BAB1CD1DEAF2C094B7 /* Pods */,
+				D8CF055059915EE8E0069410FE0B8183 /* Products */,
+				1E46F1F579FF7422932C5B08F9228604 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8688218615F7D5599D0ED0F90B604D3A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E14AFA68D353BB9AB38D5DFB16C3648E /* Info.plist */,
+				14EDE3816D75E183EECD831C32438F19 /* MQTTKit.modulemap */,
+				24AB92092C6742D6517DC82CF6C08846 /* MQTTKit.xcconfig */,
+				28035B282572D9D5580C66356BDA2A53 /* MQTTKit-dummy.m */,
+				3AC2269C57536ED05585290506237503 /* MQTTKit-prefix.pch */,
+				30E53ECACF75A76E87285635D8E1ECBB /* MQTTKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MQTTKit";
+			sourceTree = "<group>";
+		};
+		86A683494900FF61BC7D35EBCE90AB34 /* MQTTKit */ = {
+			isa = PBXGroup;
+			children = (
+				3CCBC2A1383537DCC1970AECA48F43AC /* config.h */,
+				3A6AB50398124EF1C28D1129E28CF4DA /* dummypthread.h */,
+				2B9832FAA2C86426F9D423ACE3446151 /* logging_mosq.c */,
+				5438CB0674A7C15E1311688E0CE50136 /* logging_mosq.h */,
+				4CE73C9D1123892E221F28BCC6872190 /* memory_mosq.c */,
+				5D6FEECDE9DE28B328F68AA44BCCC94F /* memory_mosq.h */,
+				673C2432B760885764C570C182C262E5 /* messages_mosq.c */,
+				0141BF3A434A66FAB71083438F87F585 /* messages_mosq.h */,
+				2BD60AC438601A1901BC437175BE3C9E /* mosquitto.c */,
+				46E428551A420CCAD8A5209C94248F5D /* mosquitto.h */,
+				6D11239CEC5735B6A4D19D50892546A7 /* mosquitto_internal.h */,
+				2F675191FFBB2A29E0379B4685FB13D5 /* mqtt3_protocol.h */,
+				6687A729BEE5E28BF1E1B741AC2911C3 /* MQTTKit.h */,
+				83797764C3C2A9B3876A22EECA852073 /* MQTTKit.m */,
+				9352D305CFB74656BAD1AFAA0BDA48C4 /* net_mosq.c */,
+				E935BC7F18E30FF52D18630938809F03 /* net_mosq.h */,
+				5C82FCAF87094437B95E7DF64E56DE2A /* read_handle.c */,
+				EC6C8D1147FE3FE98B928A23F2951AE9 /* read_handle.h */,
+				176447B71690DE9E34372813980C8A79 /* read_handle_client.c */,
+				EFFF334370B27EEAF4B266E596AB1987 /* read_handle_shared.c */,
+				1B439CF40E02064BFE07A8FFA11C9585 /* send_client_mosq.c */,
+				9A165BD7AF032250D917F954F22AA954 /* send_mosq.c */,
+				8C98BF942FB88EE6E2645F792EB6F8EE /* send_mosq.h */,
+				1BBD81BAC98150B072EFE63D6D1D891D /* thread_mosq.c */,
+				EE4BF30A8DB5B87388F32D3EE6A2C94F /* time_mosq.c */,
+				66F262DD81DFD7A67E64CB5338948F88 /* time_mosq.h */,
+				C4689774A1BC1E2BD6B39AE5F83A7674 /* tls_mosq.c */,
+				772E5CEBDDEC6D9542B23F4A1071D50D /* tls_mosq.h */,
+				6271127CD20355574B0B239B4DF56C39 /* util_mosq.c */,
+				D8E50C7CAED8053602995350467FF324 /* util_mosq.h */,
+				BCA7595418767CA89C54BBCF49D77A84 /* will_mosq.c */,
+				96302218C94854FA85BB261411A3D8BF /* will_mosq.h */,
+				8688218615F7D5599D0ED0F90B604D3A /* Support Files */,
+			);
+			name = MQTTKit;
+			path = MQTTKit;
+			sourceTree = "<group>";
+		};
+		97BE25123F96975841A83E90226D8E7F /* DateTools */ = {
+			isa = PBXGroup;
+			children = (
+				F819D4F5A043851AAA1CE0E7EBC11963 /* DateTools.h */,
+				B46901C1E2D7F0F442330F6A90B129F9 /* DTConstants.h */,
+				B6F2A317338703EC74DF3828CAF69DA2 /* DTConstants.m */,
+				3B4FBD0671C872DC49540F0A94F2D518 /* DTError.h */,
+				95974C454B337991475CEA08726EE104 /* DTError.m */,
+				A2121999040BAF06FD10251671432251 /* DTTimePeriod.h */,
+				48876A5E9E84FB4E78BE37C785DB7DB0 /* DTTimePeriod.m */,
+				7DD4E76AFC66A0AF305144F823F5A8B2 /* DTTimePeriodChain.h */,
+				D1D01DBC0779D4FDCE4E2D4013C82267 /* DTTimePeriodChain.m */,
+				84EA0355528FFC33ED8EBFBDB667B370 /* DTTimePeriodCollection.h */,
+				18BF25F68A9E5B3FD90EF81BFD0B22C3 /* DTTimePeriodCollection.m */,
+				01C042979EF01EC2FB49372B2D1917E9 /* DTTimePeriodGroup.h */,
+				4F457C521C7751181502F76A43417CCC /* DTTimePeriodGroup.m */,
+				4A99C7D76D61CD1334A18FA96FD7F629 /* NSDate+DateTools.h */,
+				E66D2153A98FB73772C16A211021F723 /* NSDate+DateTools.m */,
+				DDFF9607B7E17114A2E06F197BFFD20A /* Resources */,
+				ADB9087770A0AB28FE9880C3C2A95D45 /* Support Files */,
+			);
+			name = DateTools;
+			path = DateTools;
+			sourceTree = "<group>";
+		};
+		ADB9087770A0AB28FE9880C3C2A95D45 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E015DE50040D4A6FBAEE5CA34CAD953F /* DateTools.modulemap */,
+				553F77CB907838E5B0A2343DAAFFEF35 /* DateTools.xcconfig */,
+				D53D070FEB11E1810F7B8ADD22F8D317 /* DateTools-dummy.m */,
+				3AB763AFCB3B91EBFA1C736D84AA6870 /* DateTools-prefix.pch */,
+				C350BDA865E01B92BA50B797B89BD950 /* DateTools-umbrella.h */,
+				2816831B9E1001FC63E9BF1C85E825C7 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DateTools";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4F3D919FCFB0EA7638DC3F659CD23A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DA3AE9B3BA6D45987FCFD18CEC79911 /* Info.plist */,
+				C46C5059653565C31C313F1A60D3CD52 /* SQLite.swift.modulemap */,
+				7E66BDA7361514A1F168B3BAC9E3E0B0 /* SQLite.swift.xcconfig */,
+				EBA27AEF8253514FACCDEB476721CB07 /* SQLite.swift-dummy.m */,
+				BD77405288F32FF6E6FCE403FF1E5541 /* SQLite.swift-prefix.pch */,
+				2447BC9AAD9696959AA24E83B6D95CC8 /* SQLite.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SQLite.swift";
+			sourceTree = "<group>";
+		};
+		C55E8457E2259CF52B2877C3A24DB7D2 /* Pods-OznerLbFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				DAC7B6F51291AD9747C2F533466696FF /* Info.plist */,
+				8506D8985A61AC294DF0D61CB13117FD /* Pods-OznerLbFrameWork.modulemap */,
+				12720ECFECBB7CA3F86D913C054B4C57 /* Pods-OznerLbFrameWork-acknowledgements.markdown */,
+				BD4ED6C282794369595A84C7FDCF7A1D /* Pods-OznerLbFrameWork-acknowledgements.plist */,
+				0BAF5A578631E2C5A4E86B689FCC8132 /* Pods-OznerLbFrameWork-dummy.m */,
+				3A558C77F9F6B4608628C671B2A21B8E /* Pods-OznerLbFrameWork-resources.sh */,
+				2A3B1CFCA5A22A775874CA9A9A97742C /* Pods-OznerLbFrameWork-umbrella.h */,
+				D43D8393258EC5B0C92A3FEB8DF1C821 /* Pods-OznerLbFrameWork.debug.xcconfig */,
+				2659851B9D70BADF1590FD682EC43D98 /* Pods-OznerLbFrameWork.release.xcconfig */,
+			);
+			name = "Pods-OznerLbFrameWork";
+			path = "Target Support Files/Pods-OznerLbFrameWork";
+			sourceTree = "<group>";
+		};
+		C5EB5285E4F2EDA1A08880AB5D9A9AE4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9107BA54D5B9A27355983CB8A3C0C44C /* Info.plist */,
+				ABC0B282D38B797BCA0489A7BBBB02A2 /* SwiftyJSON.modulemap */,
+				15800F593F9639188E40ED1600EC4B08 /* SwiftyJSON.xcconfig */,
+				33C58017CF3BD92576B463202A4E14DA /* SwiftyJSON-dummy.m */,
+				F5F6ACE2D564005E84DA642197A28AB3 /* SwiftyJSON-prefix.pch */,
+				D6F2749138085808941367319ADEA022 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		C93577701A6E83BAB1CD1DEAF2C094B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97BE25123F96975841A83E90226D8E7F /* DateTools */,
+				86A683494900FF61BC7D35EBCE90AB34 /* MQTTKit */,
+				52140EA402B20752977C9EB4A7CB650B /* SQLite.swift */,
+				428CB1DB1733E35E0B081AB7B581A2EC /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D8CF055059915EE8E0069410FE0B8183 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D69CA1F842AD29715A662D4720C0346 /* DateTools.framework */,
+				2D6D21CEB915DCCAD8B202EC7FF9B2E2 /* MQTTKit.framework */,
+				7A435C8D73BF3E8CC079C6F4E1690904 /* Pods_OznerLbFrameWork.framework */,
+				ACC1AAC74928D9F68A5F3D5969C24E35 /* SQLite.framework */,
+				60BA81467336C00EC066A191260EA27A /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDFF9607B7E17114A2E06F197BFFD20A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3B9E14666D4B8B264521E335360A32B /* DateTools.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6248A6104325AD7C268810020D030C7D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78AC49FCD52E0054FB02F6C11F4BC5F3 /* Pods-OznerLbFrameWork-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF93C1E1DA952C84111B3973BE46EEF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66942DC8BAA6CBB154021E63D69C2E60 /* config.h in Headers */,
+				9489F94F4E4E46F16773FA58761E56AF /* dummypthread.h in Headers */,
+				95FE4ED120E19A5A1C36040C10F253FE /* logging_mosq.h in Headers */,
+				3A53709FA57B57914693515293D7FF89 /* memory_mosq.h in Headers */,
+				FFF6D3597AC38AE7E8C29899E4B34F39 /* messages_mosq.h in Headers */,
+				215BE9932C84D1243969D8340A335D61 /* mosquitto.h in Headers */,
+				FC92A2BB2B807125FE3D641870529E10 /* mosquitto_internal.h in Headers */,
+				4F2EDA2EFE7BE48520BE02BD5003D8E3 /* mqtt3_protocol.h in Headers */,
+				FCDB17F6A3FE1AB226515AA921BB1DD8 /* MQTTKit-umbrella.h in Headers */,
+				6BF51767A2ADD98A2410F39742E1FB23 /* MQTTKit.h in Headers */,
+				EEDE2E87970DDC6D2A194D76C932AE92 /* net_mosq.h in Headers */,
+				71BAB335801D4B59B7ABA0DFBA9386EB /* read_handle.h in Headers */,
+				C7E944BEE5F86117DB779FB6C8A0584B /* send_mosq.h in Headers */,
+				20B09288732ABE31A391B32BBD49EBDB /* time_mosq.h in Headers */,
+				2A9A108B2F3A6664F26E1A3FD8D7D7FB /* tls_mosq.h in Headers */,
+				024A9E49490E142AD2E1D73474D83B64 /* util_mosq.h in Headers */,
+				15A3CE1611B44031A23C442282E9D04B /* will_mosq.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7942633BDD05751BD493C233955E2E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870D961E64A4B99A6D15B81ECDA07261 /* fts3_tokenizer.h in Headers */,
+				59E98DCEC07113B242D8F7BA3A85BED9 /* SQLite-Bridging.h in Headers */,
+				0FDE89303AAF6414BA933197B7452EFB /* SQLite.h in Headers */,
+				F6AD30D97AD924208DE6A23DACEFCAD6 /* SQLite.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F66C2D86396FE9C78E5EC84A70A24E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7BD8AC4338BAF653D6987F1D79C131 /* DateTools-umbrella.h in Headers */,
+				D76B8EEFC24F11E920CA5F6BE58787CA /* DateTools.h in Headers */,
+				300E4E340B01A5D9941D0D6A352746FF /* DTConstants.h in Headers */,
+				C51C0EE8245186A0D2798A117337E4D3 /* DTError.h in Headers */,
+				ADA09577E0FF03BBBB39ECAE268019CD /* DTTimePeriod.h in Headers */,
+				90ABA7E462664271DA4E97AC7F88CF9F /* DTTimePeriodChain.h in Headers */,
+				D0AEFEC7C2B81BDCAC127C39F4147896 /* DTTimePeriodCollection.h in Headers */,
+				DA808CCEB892034F5CD989409224EF42 /* DTTimePeriodGroup.h in Headers */,
+				25F73A09470FABAF7255FDCD6371248B /* NSDate+DateTools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F253250988148259260DD7FFF980B19C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4448EF1D678A7F7C19F4CE88C1900645 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		019B8DD7F9406148F9C695DB96EBC4A3 /* DateTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64833E7B5C578A85728857BF0DDB53F8 /* Build configuration list for PBXNativeTarget "DateTools" */;
+			buildPhases = (
+				73665ED137DF281FC41209D973B883DB /* Sources */,
+				A47883F837EDBC7CAE3EB940C572C143 /* Frameworks */,
+				F1F66C2D86396FE9C78E5EC84A70A24E /* Headers */,
+				CDFD89AE1A372746548CDBF2EF9BF988 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DateTools;
+			productName = DateTools;
+			productReference = 3D69CA1F842AD29715A662D4720C0346 /* DateTools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2F38443B098251F9A70617ECC33ED2C2 /* Pods-OznerLbFrameWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5E81BD70E05DAFF1D035539CCDEA839 /* Build configuration list for PBXNativeTarget "Pods-OznerLbFrameWork" */;
+			buildPhases = (
+				728BF68E42706B552D971E27CB5CB4E0 /* Sources */,
+				829FD5292471E3DC97F24FDD03537B6A /* Frameworks */,
+				6248A6104325AD7C268810020D030C7D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A3291FC5E19E59FC682E5C54F071390 /* PBXTargetDependency */,
+				E1671B526563C11A0F94FD5F694BB75A /* PBXTargetDependency */,
+				8B87F728B47C2941E791E81702BA41C1 /* PBXTargetDependency */,
+				6B746978697387009980534A2798C974 /* PBXTargetDependency */,
+			);
+			name = "Pods-OznerLbFrameWork";
+			productName = "Pods-OznerLbFrameWork";
+			productReference = 7A435C8D73BF3E8CC079C6F4E1690904 /* Pods_OznerLbFrameWork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8149CB8569C6CFCEF5541EEA9A4E8C11 /* MQTTKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415EDABED4B508BFE54B6894F71E3EFC /* Build configuration list for PBXNativeTarget "MQTTKit" */;
+			buildPhases = (
+				DFE495F9AA84EE7EF2A6614A0E008461 /* Sources */,
+				FAE0B0F0311E495A28A4B8A3ABE24B3C /* Frameworks */,
+				DF93C1E1DA952C84111B3973BE46EEF2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MQTTKit;
+			productName = MQTTKit;
+			productReference = 2D6D21CEB915DCCAD8B202EC7FF9B2E2 /* MQTTKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B605D668AC9FF9C33689D0664F9E033F /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BDE86C0323E205DB6C03E2356870C7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				210EEC7B63CED735EED47A3048C90F7E /* Sources */,
+				BDBBC7D384EABA3C262775D09D2C96F1 /* Frameworks */,
+				F253250988148259260DD7FFF980B19C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 60BA81467336C00EC066A191260EA27A /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C6F7D6DAEBC506FC733D10A40A9B9209 /* SQLite.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 831DD695B6F15831E7A33236F68526EC /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
+			buildPhases = (
+				9D914D8272B4CA03C53495690B50AA46 /* Sources */,
+				995B96109514317F67C00DEF9A92F65A /* Frameworks */,
+				E7942633BDD05751BD493C233955E2E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLite.swift;
+			productName = SQLite.swift;
+			productReference = ACC1AAC74928D9F68A5F3D5969C24E35 /* SQLite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D8CF055059915EE8E0069410FE0B8183 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				019B8DD7F9406148F9C695DB96EBC4A3 /* DateTools */,
+				8149CB8569C6CFCEF5541EEA9A4E8C11 /* MQTTKit */,
+				2F38443B098251F9A70617ECC33ED2C2 /* Pods-OznerLbFrameWork */,
+				C6F7D6DAEBC506FC733D10A40A9B9209 /* SQLite.swift */,
+				B605D668AC9FF9C33689D0664F9E033F /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDFD89AE1A372746548CDBF2EF9BF988 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2561EBE2ECF953FB1AF571E94198BFCB /* DateTools.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		210EEC7B63CED735EED47A3048C90F7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C62CB1E32FB8B923DB20C87A39EA7F /* SwiftyJSON-dummy.m in Sources */,
+				B700950795ACA737991FE367B181FE08 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728BF68E42706B552D971E27CB5CB4E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0554182309AF43BD00F5B4BC932F61 /* Pods-OznerLbFrameWork-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73665ED137DF281FC41209D973B883DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C580851E5DF3A0E3B2BBA4DD4DDEDA /* DateTools-dummy.m in Sources */,
+				640A87F5852A3DAE29409231D8C45AF2 /* DTConstants.m in Sources */,
+				6D877C9CB3040D849A19E5C40ACE87AB /* DTError.m in Sources */,
+				AD04840EDD5A1160CF52F154A2604CEB /* DTTimePeriod.m in Sources */,
+				542242F8F29BA21C07E790A68CC6AAE4 /* DTTimePeriodChain.m in Sources */,
+				6BE31EBCE9C4F3CA50D5A384DE33AD5F /* DTTimePeriodCollection.m in Sources */,
+				AC54A430AD1F5495AD90A978D3A478F4 /* DTTimePeriodGroup.m in Sources */,
+				623DE8991B5C381C1A4091AE33A73BAF /* NSDate+DateTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D914D8272B4CA03C53495690B50AA46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D03AAA55BDD599DBF2364F24553F90B /* AggregateFunctions.swift in Sources */,
+				6B251FBA0636A6D3A95AEECEA7C91CA6 /* Blob.swift in Sources */,
+				C685A3FE8A99CB78202FF0FA77FAF960 /* Collation.swift in Sources */,
+				9CF3E3ED3B99068A6E72215F44AFE155 /* Connection.swift in Sources */,
+				C1A645DAD90A75E43A8D06205322A256 /* CoreFunctions.swift in Sources */,
+				33301E5D14E2FE2A4F3B68336AD76CF7 /* CustomFunctions.swift in Sources */,
+				D7C0607B810D10A52F5380976F27D993 /* Expression.swift in Sources */,
+				085B3A637BE3452ABA70C96DE5D41E84 /* Foundation.swift in Sources */,
+				3C3B0568B146B871114D73F2ED19C0E6 /* FTS4.swift in Sources */,
+				E82DA320761F74A6B24C9B10F3D2F0B0 /* FTS5.swift in Sources */,
+				51DB6D880D327A5D43E4FABB61968533 /* Helpers.swift in Sources */,
+				C23DFA9F16CB2810A77FF4DDB33976EC /* Operators.swift in Sources */,
+				5C4557244F554F63AAA18411F4F74A34 /* Query.swift in Sources */,
+				9FA8489A4ECB45E845463C2614541EA9 /* RTree.swift in Sources */,
+				4C7E56E3EC345E87768186FF19BBDE78 /* Schema.swift in Sources */,
+				BC8557DB4C8A5B47DEE65C7059721E27 /* Setter.swift in Sources */,
+				E8EBCF465BEB9E7360298FD27CAD554A /* SQLite-Bridging.m in Sources */,
+				D55362CCEE6C590F9F110E3A95DD2F2E /* SQLite.swift-dummy.m in Sources */,
+				25A91C3B22276FB428E5857D8D32705A /* Statement.swift in Sources */,
+				A6C54789BD84055FC2AC1C67F816C0E7 /* Value.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE495F9AA84EE7EF2A6614A0E008461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				695F686D906E07D1A156607BC881B64A /* logging_mosq.c in Sources */,
+				1093E181C58A6164FC751D87D5349BF0 /* memory_mosq.c in Sources */,
+				C1BAC852F6928ED49288420D79A1CA5D /* messages_mosq.c in Sources */,
+				28AE5352289F24EA7580AF41101B0072 /* mosquitto.c in Sources */,
+				D343F6F13477599799EBA39792C36258 /* MQTTKit-dummy.m in Sources */,
+				0D0A4571B253521555BC09945FC91151 /* MQTTKit.m in Sources */,
+				1A09398E4BCDE394E5D373658BABCB33 /* net_mosq.c in Sources */,
+				9B8B515C491C20BD826A0BB3315FFB29 /* read_handle.c in Sources */,
+				FA2A874E785B2BD3D892172594FE4AE9 /* read_handle_client.c in Sources */,
+				26E4A92F6B134506DCEB8890D96D1DDF /* read_handle_shared.c in Sources */,
+				5D7A736991748C864C39105B751F94D5 /* send_client_mosq.c in Sources */,
+				1641B02340463122EE220BCE3C4C6864 /* send_mosq.c in Sources */,
+				F33CB7BDD10E4BEE5484E9818855C4D5 /* thread_mosq.c in Sources */,
+				753B82B1D15E8CE4FD62E8352EFA50C8 /* time_mosq.c in Sources */,
+				26F0F81C2448623F053357F3298CA39A /* tls_mosq.c in Sources */,
+				F8BFDA2C8BACADC66DF82EEF314305C8 /* util_mosq.c in Sources */,
+				14ED1A26A4F81A8AB068978A557F5DEC /* will_mosq.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B746978697387009980534A2798C974 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = B605D668AC9FF9C33689D0664F9E033F /* SwiftyJSON */;
+			targetProxy = D54BBE573390E1B94BC76C42DED4D839 /* PBXContainerItemProxy */;
+		};
+		7A3291FC5E19E59FC682E5C54F071390 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DateTools;
+			target = 019B8DD7F9406148F9C695DB96EBC4A3 /* DateTools */;
+			targetProxy = A83B7B15B1AD432F8615D31AE585CCCC /* PBXContainerItemProxy */;
+		};
+		8B87F728B47C2941E791E81702BA41C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLite.swift;
+			target = C6F7D6DAEBC506FC733D10A40A9B9209 /* SQLite.swift */;
+			targetProxy = 14DB62318F73E65F74E74FAD7FB29B23 /* PBXContainerItemProxy */;
+		};
+		E1671B526563C11A0F94FD5F694BB75A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MQTTKit;
+			target = 8149CB8569C6CFCEF5541EEA9A4E8C11 /* MQTTKit */;
+			targetProxy = 9213ADE5D735F05C5664549660E44D3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2F9702156B021CBEC479489825D3D49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E66BDA7361514A1F168B3BAC9E3E0B0 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5284C0F7EE7F291ACE53E8907C90E506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15800F593F9639188E40ED1600EC4B08 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		61CBA8E7193FC08288512F49D91D6442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24AB92092C6742D6517DC82CF6C08846 /* MQTTKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MQTTKit/MQTTKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MQTTKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MQTTKit/MQTTKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MQTTKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7614767AFF1FF7F8583FBDF689F9AC9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24AB92092C6742D6517DC82CF6C08846 /* MQTTKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MQTTKit/MQTTKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MQTTKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MQTTKit/MQTTKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MQTTKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		89F574160C7C0EA3ED2BD4AAEE885C10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553F77CB907838E5B0A2343DAAFFEF35 /* DateTools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTools/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DateTools/DateTools.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DateTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BBE1CDB3768D2839499BB3342BC16B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E66BDA7361514A1F168B3BAC9E3E0B0 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6F902730F7452AA8694B62F50D4D02F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553F77CB907838E5B0A2343DAAFFEF35 /* DateTools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTools/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DateTools/DateTools.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DateTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8A9D8F531F33A2A7AA74FDA114AC50C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15800F593F9639188E40ED1600EC4B08 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE1214D5C3508B402506CDDEE40262F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2659851B9D70BADF1590FD682EC43D98 /* Pods-OznerLbFrameWork.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OznerLbFrameWork/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OznerLbFrameWork/Pods-OznerLbFrameWork.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OznerLbFrameWork;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F45466DA3A1F9C9CB80A1BB965948B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D43D8393258EC5B0C92A3FEB8DF1C821 /* Pods-OznerLbFrameWork.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OznerLbFrameWork/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OznerLbFrameWork/Pods-OznerLbFrameWork.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OznerLbFrameWork;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		415EDABED4B508BFE54B6894F71E3EFC /* Build configuration list for PBXNativeTarget "MQTTKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7614767AFF1FF7F8583FBDF689F9AC9F /* Debug */,
+				61CBA8E7193FC08288512F49D91D6442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64833E7B5C578A85728857BF0DDB53F8 /* Build configuration list for PBXNativeTarget "DateTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6F902730F7452AA8694B62F50D4D02F /* Debug */,
+				89F574160C7C0EA3ED2BD4AAEE885C10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		831DD695B6F15831E7A33236F68526EC /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F9702156B021CBEC479489825D3D49C /* Debug */,
+				BBE1CDB3768D2839499BB3342BC16B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BDE86C0323E205DB6C03E2356870C7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8A9D8F531F33A2A7AA74FDA114AC50C /* Debug */,
+				5284C0F7EE7F291ACE53E8907C90E506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5E81BD70E05DAFF1D035539CCDEA839 /* Build configuration list for PBXNativeTarget "Pods-OznerLbFrameWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45466DA3A1F9C9CB80A1BB965948B44 /* Debug */,
+				EE1214D5C3508B402506CDDEE40262F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
