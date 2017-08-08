@@ -84,15 +84,15 @@ public class OznerManager: NSObject {
             break
         }
     }
-   public func deleteDevice(device:OznerBaseDevice) {
+    public func deleteDevice(device:OznerBaseDevice) {
         OznerDeviceManager.instance.deleteDevice(device: device)
         let devices = OznerDeviceManager.instance.getAllDevices()        
         OznerManager.instance.currentDevice = (devices?.count)!>0 ? devices?[0]:nil
     }
-   public func getDevice(identifier:String) -> OznerBaseDevice? {
+    public func getDevice(identifier:String) -> OznerBaseDevice? {
         return OznerDeviceManager.instance.getDevice(identifier: identifier)
     }
-   public func getAllDevices() -> [OznerBaseDevice]! {
+    public func getAllDevices() -> [OznerBaseDevice]! {
         return OznerDeviceManager.instance.getAllDevices()
     }
     
@@ -101,15 +101,15 @@ public class OznerManager: NSObject {
     }
     //配对操作
     //开始配对
-   public func starPair(deviceClass:OZDeviceClass,pairDelegate:OznerPairDelegate?,ssid:String?,password:String?) {
+    public func starPair(deviceClass:OZDeviceClass,pairDelegate:OznerPairDelegate?,ssid:String?,password:String?) {
         OznerIOManager.instance.starPair(deviceClass: deviceClass, pairDelegate: pairDelegate,ssid: ssid,password: password)
     }
     //取消配对
-   public func canclePair() {
+    public func canclePair() {
         OznerIOManager.instance.canclePair()
     }
     //获取当前连接的无线网名称
-   public  func fetchCurrentSSID(handler:((String?)->Void)!) {
+    public  func fetchCurrentSSID(handler:((String?)->Void)!) {
         handler(EASYLINK.ssidForConnectedNetwork())
     }
     

@@ -9,10 +9,10 @@
 import UIKit
 
 //庆科，Ayla，蓝牙等io管理中心
-class OznerIOManager: NSObject {
+public class OznerIOManager: NSObject {
 
     private static var _instance: OznerIOManager! = nil
-    static var instance: OznerIOManager! {
+    static public var instance: OznerIOManager! {
         get {
             if _instance == nil {
                 _instance = OznerIOManager()

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680B294C1F3969CE00E1FCCB /* OznerManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = 68365C381F387483000227A4 /* OznerManager.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		680B294D1F3969D200E1FCCB /* AirPurifier_Wifi.swift in Headers */ = {isa = PBXBuildFile; fileRef = 68365BDA1F387483000227A4 /* AirPurifier_Wifi.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		68365BC51F387477000227A4 /* OznerLbFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68365BBB1F387477000227A4 /* OznerLbFrameWork.framework */; };
 		68365BCA1F387477000227A4 /* OznerLbFrameWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68365BC91F387477000227A4 /* OznerLbFrameWorkTests.swift */; };
 		68365BCC1F387477000227A4 /* OznerLbFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 68365BBE1F387477000227A4 /* OznerLbFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -89,8 +91,6 @@
 		68365C8C1F387483000227A4 /* Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 68365C3D1F387483000227A4 /* Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68365C8D1F387483000227A4 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 68365C3E1F387483000227A4 /* Helper.m */; };
 		68365C8E1F387483000227A4 /* OznerTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68365C3F1F387483000227A4 /* OznerTools.swift */; };
-		68365CBB1F387E03000227A4 /* OznerManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = 68365C381F387483000227A4 /* OznerManager.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		68365CBC1F387E23000227A4 /* AirPurifier_Wifi.swift in Headers */ = {isa = PBXBuildFile; fileRef = 68365BDA1F387483000227A4 /* AirPurifier_Wifi.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEE610B8641D9CE3E8565A7D /* Pods_OznerLbFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E035AEDB5644573F97D879 /* Pods_OznerLbFrameWork.framework */; };
 /* End PBXBuildFile section */
 
@@ -605,9 +605,9 @@
 				68365C851F387483000227A4 /* Reachability.h in Headers */,
 				68365C571F387483000227A4 /* BabyCallback.h in Headers */,
 				68365C531F387483000227A4 /* BabyBLEIO.h in Headers */,
+				680B294D1F3969D200E1FCCB /* AirPurifier_Wifi.swift in Headers */,
 				68365C8C1F387483000227A4 /* Helper.h in Headers */,
-				68365CBC1F387E23000227A4 /* AirPurifier_Wifi.swift in Headers */,
-				68365CBB1F387E03000227A4 /* OznerManager.swift in Headers */,
+				680B294C1F3969CE00E1FCCB /* OznerManager.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

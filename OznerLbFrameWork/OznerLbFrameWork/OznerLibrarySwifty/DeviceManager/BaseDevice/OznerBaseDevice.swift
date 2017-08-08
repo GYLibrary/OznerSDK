@@ -7,7 +7,7 @@
 //
 
 import UIKit
-enum OznerConnectStatus {
+public enum OznerConnectStatus {
     case Connecting
     case Disconnect
     case Connected
@@ -32,15 +32,15 @@ public class OznerBaseDevice: NSObject,OznerBaseIODelegate {
     //var identifier:String!//系统自动生成的，自带的，原生的设备id，不一样的设备获取到的不唯一，蓝牙自动连接使用
     //var macAdress:String!//广播包发过来的，浩泽自己定义的唯一识别码,接口调用时用,滤芯，周月数据
     //var type:String!
-    var deviceInfo:OznerDeviceInfo!
+    public var deviceInfo:OznerDeviceInfo!
     
-    var settings:BaseDeviceSetting!
-    var connectStatus=OznerConnectStatus.Disconnect{
+    public var settings:BaseDeviceSetting!
+    public var connectStatus=OznerConnectStatus.Disconnect{
         didSet{
             delegate?.OznerDeviceStatusUpdate?(identifier: deviceInfo.deviceID)
         }
     }
-    var delegate:OznerBaseDeviceDelegate?
+    public var delegate:OznerBaseDeviceDelegate?
     private var io:OznerBaseIO?
     required public init(deviceinfo:OznerDeviceInfo,Settings settings:String?) {
         super.init()

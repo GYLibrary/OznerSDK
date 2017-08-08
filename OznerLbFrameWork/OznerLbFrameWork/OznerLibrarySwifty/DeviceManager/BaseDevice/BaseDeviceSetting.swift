@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseDeviceSetting: NSObject {
+public class BaseDeviceSetting: NSObject {
     //设备名称
     var name:String!{
         set{
@@ -29,7 +29,7 @@ class BaseDeviceSetting: NSObject {
         }
     }
     private var values:[String:String]!
-    required init(json:String?) {
+    required public init(json:String?) {
         values=[String:String]()
         if json != nil && json != "" {
             let data = json?.data(using: String.Encoding.utf8)
