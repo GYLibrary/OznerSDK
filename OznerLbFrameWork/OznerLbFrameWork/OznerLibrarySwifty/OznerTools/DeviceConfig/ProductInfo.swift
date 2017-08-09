@@ -43,6 +43,12 @@ public enum OZDeviceClass:String{
     case AirPurifier_Wifi="AirPurifier_Wifi"
     case WaterReplenish="WaterReplenish"
     case Electrickettle_Blue="Electrickettle_Blue"
+    
+//    public var rawValue:String {
+//        let name = ""
+//        return name
+//    }
+    
     static func getFromString(str:String)->OZDeviceClass{
         return ["WaterPurifier_Blue":.WaterPurifier_Blue,"Cup":.Cup,"Tap":.Tap,"TDSPan":.TDSPan,"WaterPurifier_Wifi":.WaterPurifier_Wifi,"AirPurifier_Blue":.AirPurifier_Blue,"AirPurifier_Wifi":.AirPurifier_Wifi,"WaterReplenish":.WaterReplenish,"Electrickettle_Blue":.Electrickettle_Blue][str]!
     }

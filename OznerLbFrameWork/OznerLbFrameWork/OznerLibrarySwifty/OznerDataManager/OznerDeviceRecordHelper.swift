@@ -8,6 +8,7 @@
 
 import UIKit
 import SQLite
+import DateTools
 class OznerDeviceRecordHelper: NSObject {
     private static var _instance: OznerDeviceRecordHelper! = nil
     static var instance: OznerDeviceRecordHelper! {

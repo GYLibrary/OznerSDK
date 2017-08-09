@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DateTools
 
 class WaterPurifier_Blue: OznerBaseDevice {
     

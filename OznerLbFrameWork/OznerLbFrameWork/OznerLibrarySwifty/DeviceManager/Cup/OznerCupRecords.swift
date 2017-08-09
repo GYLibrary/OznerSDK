@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DateTools
 enum CupRecordType {
     case day
     case weak

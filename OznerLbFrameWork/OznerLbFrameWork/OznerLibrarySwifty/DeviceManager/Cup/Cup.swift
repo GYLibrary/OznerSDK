@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import DateTools
 //水杯设置共用字段，作用，本地保存和发送到设备
 let remindEnableOfCupSetting = "remindEnableOfCupSetting"//"0","1"
 let remindStartOfCupSetting = "remindStartOfCupSetting"

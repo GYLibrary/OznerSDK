@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DateTools
 
 class AirPurifier_Blue: OznerBaseDevice {
 

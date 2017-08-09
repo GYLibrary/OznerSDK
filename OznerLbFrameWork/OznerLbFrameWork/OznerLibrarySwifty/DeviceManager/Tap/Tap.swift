@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DateTools
 let TapCheckKey1 = "TapCheckKey1"
 let TapCheckKey2 = "TapCheckKey2"
 class Tap: OznerBaseDevice {
