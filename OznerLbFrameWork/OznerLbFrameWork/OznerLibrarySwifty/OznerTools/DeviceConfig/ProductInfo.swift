@@ -107,6 +107,35 @@ public struct OznerDeviceInfo {
         return "设备ID:\(self.deviceID)\n设备Mac:\(self.deviceMac)\n设备型号:\(self.deviceType)\n产品ID:\(self.productID)\nWiFi版本:\(self.wifiVersion)"
     }
 }
+
+extension OznerDeviceInfo{
+    
+    typealias _ObjectiveCType =  OznerDeviceInfo
+    
+    // 判断是否能转换成Objective-C对象
+    static func _isBridgedToObjectiveC() -> Bool {
+        return true
+    }
+    // 获取转换的目标类型
+    static func _getObjectiveCType() -> Any.Type {
+        return _ObjectiveCType.self
+    }
+    
+    // 转换成Objective-C对象
+    func _bridgeToObjectiveC() -> _ObjectiveCType {
+        
+        return OznerDeviceInfo(deviceID: deviceID, deviceMac: deviceMac, deviceType: deviceType, productID: productID, wifiVersion: wifiVersion)
+        
+    }
+
+//    // 有条件地将Objective-C对象转换成Swift结构体类型
+//    static func _conditionallyBridgeFromObjectiveC(source: _ObjectiveCType, inout result: SwiftMobile?) -> Bool {
+//        _forceBridgeFromObjectiveC(source, result: &result)
+//        return true
+//    }
+//    
+}
+
 let temperature_high=50
 let temperature_low=25
 let tds_bad=200

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		680B294C1F3969CE00E1FCCB /* OznerManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = 68365C381F387483000227A4 /* OznerManager.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		680B294D1F3969D200E1FCCB /* AirPurifier_Wifi.swift in Headers */ = {isa = PBXBuildFile; fileRef = 68365BDA1F387483000227A4 /* AirPurifier_Wifi.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		682269381F414CFE0003B727 /* ProductInfo.swift in Headers */ = {isa = PBXBuildFile; fileRef = 68365C3C1F387483000227A4 /* ProductInfo.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		682269411F4151250003B727 /* OznerDeviceInfoOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6822693F1F4151250003B727 /* OznerDeviceInfoOC.h */; };
+		682269421F4151250003B727 /* OznerDeviceInfoOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 682269401F4151250003B727 /* OznerDeviceInfoOC.m */; };
 		68365BC51F387477000227A4 /* OznerLbFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68365BBB1F387477000227A4 /* OznerLbFrameWork.framework */; };
 		68365BCA1F387477000227A4 /* OznerLbFrameWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68365BC91F387477000227A4 /* OznerLbFrameWorkTests.swift */; };
 		68365BCC1F387477000227A4 /* OznerLbFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 68365BBE1F387477000227A4 /* OznerLbFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -105,6 +108,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6822693F1F4151250003B727 /* OznerDeviceInfoOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OznerDeviceInfoOC.h; sourceTree = "<group>"; };
+		682269401F4151250003B727 /* OznerDeviceInfoOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OznerDeviceInfoOC.m; sourceTree = "<group>"; };
 		68365BBB1F387477000227A4 /* OznerLbFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OznerLbFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68365BBE1F387477000227A4 /* OznerLbFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OznerLbFrameWork.h; sourceTree = "<group>"; };
 		68365BBF1F387477000227A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -187,8 +192,8 @@
 		68365C381F387483000227A4 /* OznerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OznerManager.swift; sourceTree = "<group>"; };
 		68365C3B1F387483000227A4 /* ProductInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProductInfo.plist; sourceTree = "<group>"; };
 		68365C3C1F387483000227A4 /* ProductInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
-		68365C3D1F387483000227A4 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Helper.h; path = OznerLibrarySwifty/OznerTools/Helper.h; sourceTree = "<group>"; };
-		68365C3E1F387483000227A4 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Helper.m; path = OznerLibrarySwifty/OznerTools/Helper.m; sourceTree = "<group>"; };
+		68365C3D1F387483000227A4 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		68365C3E1F387483000227A4 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		68365C3F1F387483000227A4 /* OznerTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OznerTools.swift; sourceTree = "<group>"; };
 		9E54549488B7A4630EDA9E65 /* Pods-OznerLbFrameWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OznerLbFrameWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OznerLbFrameWork/Pods-OznerLbFrameWork.debug.xcconfig"; sourceTree = "<group>"; };
 		A4E801FD5CADFEAABCB6ADBA /* Pods-OznerLbFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OznerLbFrameWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-OznerLbFrameWork/Pods-OznerLbFrameWork.release.xcconfig"; sourceTree = "<group>"; };
@@ -248,8 +253,6 @@
 		68365BBD1F387477000227A4 /* OznerLbFrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				68365C3D1F387483000227A4 /* Helper.h */,
-				68365C3E1F387483000227A4 /* Helper.m */,
 				68365BD51F387483000227A4 /* OznerLibrarySwifty */,
 				68365BBE1F387477000227A4 /* OznerLbFrameWork.h */,
 				68365BBF1F387477000227A4 /* Info.plist */,
@@ -551,6 +554,10 @@
 		68365C391F387483000227A4 /* OznerTools */ = {
 			isa = PBXGroup;
 			children = (
+				68365C3D1F387483000227A4 /* Helper.h */,
+				68365C3E1F387483000227A4 /* Helper.m */,
+				6822693F1F4151250003B727 /* OznerDeviceInfoOC.h */,
+				682269401F4151250003B727 /* OznerDeviceInfoOC.m */,
 				68365C3A1F387483000227A4 /* DeviceConfig */,
 				68365C3F1F387483000227A4 /* OznerTools.swift */,
 			);
@@ -596,6 +603,7 @@
 				68365C5B1F387483000227A4 /* BabyDefine.h in Headers */,
 				68365C691F387483000227A4 /* GCDAsyncSocket.h in Headers */,
 				68365C611F387483000227A4 /* BabyRhythm.h in Headers */,
+				682269411F4151250003B727 /* OznerDeviceInfoOC.h in Headers */,
 				68365C631F387483000227A4 /* BabySpeaker.h in Headers */,
 				68365C5D1F387483000227A4 /* BabyOptions.h in Headers */,
 				68365C711F387483000227A4 /* EasyLink.h in Headers */,
@@ -607,6 +615,7 @@
 				68365C531F387483000227A4 /* BabyBLEIO.h in Headers */,
 				680B294D1F3969D200E1FCCB /* AirPurifier_Wifi.swift in Headers */,
 				68365C8C1F387483000227A4 /* Helper.h in Headers */,
+				682269381F414CFE0003B727 /* ProductInfo.swift in Headers */,
 				680B294C1F3969CE00E1FCCB /* OznerManager.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -788,6 +797,7 @@
 				68365C401F387483000227A4 /* AirPurifier_Blue.swift in Sources */,
 				68365C7A1F387483000227A4 /* NSMutableDictionary+NilFuckOff.m in Sources */,
 				68365C781F387483000227A4 /* NSDictionary+ZBKeyMapping.m in Sources */,
+				682269421F4151250003B727 /* OznerDeviceInfoOC.m in Sources */,
 				68365C7C1F387483000227A4 /* OznerBonjourDetail.m in Sources */,
 				68365C481F387483000227A4 /* Tap.swift in Sources */,
 				68365C681F387483000227A4 /* OznerBluetoothManager.swift in Sources */,
